@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .cabeçalho__menu-hamburger {
@@ -22,3 +23,38 @@
 .container__imagem {
     padding: 1em;
 }
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container__btn{
+    display: none;
+}
+
+.container__btn:checked ~ .lista-menu { 
+    /* ~ -> combinador CSS. Atrás do combinador, checa que a condicional está certa para aplicar o elemento seguinte da classe*/
+    /*Se a classe container_btn estiver checked, aplicar o que estiver dentro da clase lista-menu*/
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.lista-menu__titulo{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+background: var(--blue);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-transform: uppercase;
+}
+
