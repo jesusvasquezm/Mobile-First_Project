@@ -37,6 +37,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: .5em;
+    
+}
+
+.description {
+    margin:  0 1em .5em 0;
 }
 
 .description__title {
@@ -62,14 +67,16 @@ margin: .5em 0;
 
 .buttons {
     display: flex;
+    gap: 1em;
 }
 .buttons__item {
-    margin: 0 0.5em;
+    margin: 1em 0.5em 0 0;
 }
 
 .buttons__ancor {
     background-color: var(--orange);
   padding: 1em 2.2em;
+  margin: 1em 0;
   color: var(--white);
   font-weight: 700;
   text-decoration: none;
