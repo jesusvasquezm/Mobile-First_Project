@@ -96,4 +96,13 @@ text-transform: uppercase;
     .cabeçalho__menu-hamburger , .container__imagem-favorite{
         display: none;
     }
+
+    .options__btn:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .options__btn{
+        display: none;
+    }
 }
