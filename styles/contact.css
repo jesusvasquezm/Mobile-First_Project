@@ -4,8 +4,8 @@
 }
 .contact__title, .contact__text {
     background: var(--blue);
-    .webkit-background.clip: text;
-    .webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
